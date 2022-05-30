@@ -946,7 +946,7 @@ footer {
     column-gap: 4em;
     grid-template-areas: "header nav"
         "section aside"
-        "footer footer"
+        "footer footer";
 }
 
 
@@ -1010,67 +1010,5 @@ footer {
         "main main"
         "section section"
         "footer footer"
-}
-
-.fotodelteatro {
-    height: 20em;
-}
-
-.fotodelteatroh {
-    justify-content: center;
-    display: inline-flex;
-}
-
-.fotodelteatrof {
-    height: 18em;
-    width: 25em;
-    border-radius: 1em
-}
-
-.fotodelteatroy {
-    display: inline-flex;
-    padding-inline: 1em;
-    justify-items: center;
-}
-
-.titulodelteatro {
-    background-color: #3c3c6e;
-    color: antiquewhite;
-    font-size: 1.5em;
-    text-align: center;
-}
-
-.textoteatro {
-    font-family: 'RobotoLight';
-    font-size: 1em;
-    text-align: justify;
-    height: 18em;
-    width: 80em;
-    line-height: 1em;
-    line-height: 2em;
-    margin: 1em;
-    padding: 1em;
-}
-
-.cajatextoteatro {
-    height: 18em;
-    width: 80em;
-    margin: 1em;
-    padding: 1em;
-    padding: 1em;
-}
-
-
-.videosteatros {
-    display: flex;
-    margin: 2em;
-    padding: 1em;
-    background-color: beige;
-    align-items: center;
-}
-
-.vin {
-    align-items: center;
-    padding: 1em;
 }
 
