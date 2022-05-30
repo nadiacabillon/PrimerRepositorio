@@ -1,388 +1,5 @@
+
 /*
-@font-face {
-    font-family: 'Roboto';
-    src: url(../fonts/Roboto/Roboto-Regular.ttf);
-
-}
-
-@font-face {
-    font-family: 'RobotoBold';
-    src: url(../fonts/Roboto/Roboto-Bold.ttf);
-
-}
-
-@font-face {
-    font-family: 'RobotoLight';
-    src: url(../fonts/Roboto/Roboto-Light.ttf);
-
-}
-
-@font-face {
-    font-family: 'RobotoItalic';
-    src: url(../fonts/Roboto/Roboto-BlackItalic.ttf);
-
-}
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-.gridcontainerA {
-
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 10em 4fr 1fr;
-    grid-template-areas: "header nav"
-        "main main"
-        "section aside"
-        "footer footer";
-    column-gap: 4em;
-    row-gap: 2em;
-}
-
-header {
-    grid-area: header;
-}
-
-main {
-    grid-area: main;
-}
-
-section {
-    grid-area: section;
-}
-
-aside {
-    grid-area: aside;
-}
-
-footer {
-    grid-area: footer;
-}
-
-.botones,
-.todoslosbotones,
-.listadebotones,
-.cadaboton {
-    display: inline-flex;
-}
-
-.botones {height: 4em;}
-
-.menu,
-.menu2,
-.menu3,
-.menu4 {
-    display: inline;
-}
-
-.menu {
-    display: flex;
-    
-}
-
-.menu2,
-.menu4 {
-    font-family: 'RobotoBold';
-    display: inline-flex;
-    font-size: 1em;
-    text-decoration: none;
-    background-color: lightgrey;
-    overflow: hidden;
-    color: #3c3c6e;
-    padding: 1em;
-    margin: 1em;
-    height: 5em;
-    width: max-content;
-    border-radius: 2em;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.botones,
-.todoslosbotones,
-.listadebotones,
-.textoboton {
-    font-family: 'Roboto';
-    font-size: 1em;
-    display: inline-flex;
-    flex-direction: row;
-    text-align: center;
-    text-decoration: none;
-    color: whitesmoke;
-    background-color: #3c3c6e;
-    
-    justify-content: center;
-    align-items: center;
-
-
-}
-
-
-.social,
-.redes,
-.redes1 {
-    display: inline;
-    font-family: 'Roboto';
-    font-size: 1em;
-}
-
-
-h3 {
-    font-family: 'RobotoBold';
-    font-size: 1em;
-}
-
-h4 {
-    font-family: 'RobotoBold';
-    font-size: 1em;
-}
-
-.texto1,
-.texto2 {
-    font-family: 'RobotoLight';
-    font-size: 1em;
-    text-align: justify;
-    height: 18em;
-    width: 25em;
-    line-height: 1em;
-    margin: 2em;
-    padding: 1em;
-    line-height: 2em;
-    display: flexbox;
-
-}
-
-
-.fotomultimedia {
-    height: 21em;
-    width: 28em;
-    margin: 1em;
-    padding: 1em;
-    border-radius: 10%;
-}
-
-
-.derechos {     font-family: 'RobotoLight';
-    font-size: 1em;
-    text-align: right}
-
-
-
-
-
-.gridcontainerB {
-
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
-    grid-template-areas: "header nav"
-        "form contacto"
-        "footer footer";
-    column-gap: 4em;
-    row-gap: 4em;
-}
-
-
-header {
-    grid-area: header;
-}
-
-main {
-    grid-area: main;
-}
-
-.form {
-    grid-area: form;
-}
-
-
-
-footer {
-    grid-area: footer;
-}
-.imagencontacto {
-    height: 34em;
-    width: 31em;
-    border-radius: 1em;
-    grid-area: contacto;
-}
-
-.tituloform {
-    font-family: 'Roboto';
-    color: antiquewhite;
-}
-
-.formulario {
-    height: 34em;
-    width: 40em;
-    background-color: #3c3c6e;
-    color: antiquewhite;
-    font-size: 1em;
-    font-family: 'RobotoLight';
-    padding-inline: 1em;
-    border-radius: 1em;
-    margin:1em
-}
-
-.listaform { padding: 3em; list-style: none;
-}
-
-
-
-
-
-
-.proceso1, .proceso2, .proceso3 {
-    font-family: 'RobotoLight';
-    font-size: 1em;
-    text-align: justify;
-    line-height: 2em;
-    height: 18em;
-    width: 28em;
-    margin: 1em;
-    padding: 1em;
-
-}
-
-.maquetas1, .maquetas2, .maquetas3 { height: 18em; width: 30em; margin: 1em; border-radius: 10%;}
-
-.gridcontainerC {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
-    column-gap: 4em;
-    grid-template-areas: "header nav"
-    "section aside"
-    "footer footer"
-}
-    
-
-
-
-.entrevistas { height: 34em;
-    width: 40em;
-    background-color: #3c3c6e;
-    color: antiquewhite;
-    font-size: 1em;
-    font-family: 'RobotoLight';
-    border-radius: 1em;
-margin: 1em;}
-
-.listado, .listado1, .listado2 {padding: 1em;}
-
-.fotolateralprensa1 {    height: 34em;
-    width: 31em;
-    border-radius: 1em;
-    margin: 1em;} 
-
-
-.gridcontainerD { display: grid;
-grid-template-columns:1fr 1fr;
-grid-template-rows: 1fr 4fr 1fr;
-column-gap: 4em;
-grid-template-areas: "header nav"
-"section aside"
-"footer footer"}
-
-
-
-
-
-@media screen and (min-width: 320px) {
-
-    .gridcontainerA {
-
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "header"
-            "nav "
-            "nav"
-            "main"
-            "section"
-            "aside"
-            "footer";
-        column-gap: 4em;
-        row-gap: 2em;
-        align-items: center;
-
-    }
-
-.cadaboton{padding-inline: 3em;}
-
-    
-}
-
-    @media screen and (min-width: 1200px) {
-
-        .gridcontainerA {
-
-            display: grid;
-            height: 100vh;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 10em 4fr 1fr;
-            grid-template-areas: "header nav"
-                "main main"
-                "section aside"
-                "footer footer";
-            column-gap: 4em;
-            row-gap: 2em;
-        }
-    
-
-    }
-
-
-.gridcontainert {display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 10em 10 em 1fr;
-    grid-template-areas: "header nav"
-"main main"
-"main main"
-"section section"
-"footer footer"}
-
-.fotodelteatro {height: 20em; background-color: ;}
-.fotodelteatroh { justify-content: center; display: inline-flex;}
-.fotodelteatrof { height: 18em; width: 25em;  border-radius: 1em} 
-.fotodelteatroy { display: inline-flex; padding-inline: 1em; justify-items: center;} 
-.titulodelteatro { background-color: #3c3c6e; color: antiquewhite; font-size: 1.5em ; text-align: center;}
-.textoteatro {font-family: 'RobotoLight';
-    font-size: 1em;
-    text-align: justify;
-    height: 18em;
-    width: 80em;
-    line-height: 1em;
-    line-height: 2em;
-margin: 1em;
-padding: 1em;}
-
-    .cajatextoteatro { height: 18em;
-        width: 80em; margin: 1em;
-        padding: 1em; padding: 1em;}
-
-
-.videosteatros { display: flex; margin: 2em; padding: 1em; background-color: beige; align-items: center;}
-
-.vin {align-items: center; padding: 1em;}
-*/
-
-
-
-
-
 
 
 @font-face {
@@ -744,7 +361,7 @@ footer {
 
 
 
-/*mediaquery CONTACTO Y PAGINA PRINCIPAL*/
+
 
 
 @media screen and (min-width: 1200px) {
@@ -943,5 +560,394 @@ footer {
 
 @media screen and (max-width: 480px) {
     .imagencontacto {display: none;}
+*/
+
+
+
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
 
 }
+
+@font-face {
+    font-family: 'RobotoBold';
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+
+}
+
+@font-face {
+    font-family: 'RobotoLight';
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+
+}
+
+@font-face {
+    font-family: 'RobotoItalic';
+    src: url(../fonts/Roboto/Roboto-BlackItalic.ttf);
+
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.gridcontainerA {
+
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 10em 4fr 1fr;
+    grid-template-areas: "header nav"
+        "main main"
+        "section aside"
+        "footer footer";
+    column-gap: 4em;
+    row-gap: 2em;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+section {
+    grid-area: section;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.botones,
+.todoslosbotones,
+.listadebotones,
+.cadaboton {
+    display: inline-flex;
+}
+
+.botones {
+    height: 4em;
+}
+
+.menu,
+.menu2,
+.menu3,
+.menu4 {
+    display: inline;
+}
+
+.menu {
+    display: flex;
+
+}
+
+.menu2,
+.menu4 {
+    font-family: 'RobotoBold';
+    display: inline-flex;
+    font-size: 1em;
+    text-decoration: none;
+    background-color: lightgrey;
+    overflow: hidden;
+    color: #3c3c6e;
+    padding: 1em;
+    margin: 1em;
+    height: 5em;
+    width: max-content;
+    border-radius: 2em;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.botones,
+.todoslosbotones,
+.listadebotones,
+.textoboton {
+    font-family: 'Roboto';
+    font-size: 1em;
+    display: inline-flex;
+    flex-direction: row;
+    text-align: center;
+    text-decoration: none;
+    color: whitesmoke;
+    background-color: #3c3c6e;
+
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.social,
+.redes,
+.redes1 {
+    display: inline;
+    font-family: 'Roboto';
+    font-size: 1em;
+}
+
+
+h3 {
+    font-family: 'RobotoBold';
+    font-size: 1em;
+}
+
+h4 {
+    font-family: 'RobotoBold';
+    font-size: 1em;
+}
+
+.texto1,
+.texto2 {
+    font-family: 'RobotoLight';
+    font-size: 1em;
+    text-align: justify;
+    height: 18em;
+    width: 25em;
+    line-height: 1em;
+    margin: 2em;
+    padding: 1em;
+    line-height: 2em;
+    display: flexbox;
+
+}
+
+
+.fotomultimedia {
+    height: 21em;
+    width: 28em;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10%;
+}
+
+
+.derechos {
+    font-family: 'RobotoLight';
+    font-size: 1em;
+    text-align: right
+}
+
+
+
+
+
+.gridcontainerB {
+
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    grid-template-areas: "header nav"
+        "form contacto"
+        "footer footer";
+    column-gap: 4em;
+    row-gap: 4em;
+}
+
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+.form {
+    grid-area: form;
+}
+
+
+
+footer {
+    grid-area: footer;
+}
+
+.imagencontacto {
+    height: 34em;
+    width: 31em;
+    border-radius: 1em;
+    grid-area: contacto;
+}
+
+.tituloform {
+    font-family: 'Roboto';
+    color: antiquewhite;
+}
+
+.formulario {
+    height: 34em;
+    width: 40em;
+    background-color: #3c3c6e;
+    color: antiquewhite;
+    font-size: 1em;
+    font-family: 'RobotoLight';
+    padding-inline: 1em;
+    border-radius: 1em;
+    margin: 1em
+}
+
+.listaform {
+    padding: 3em;
+    list-style: none;
+}
+
+
+
+
+
+
+.proceso1,
+.proceso2,
+.proceso3 {
+    font-family: 'RobotoLight';
+    font-size: 1em;
+    text-align: justify;
+    line-height: 2em;
+    height: 18em;
+    width: 28em;
+    margin: 1em;
+    padding: 1em;
+
+}
+
+.maquetas1,
+.maquetas2,
+.maquetas3 {
+    height: 18em;
+    width: 30em;
+    margin: 1em;
+    border-radius: 10%;
+}
+
+.gridcontainerC {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    column-gap: 4em;
+    grid-template-areas: "header nav"
+        "section aside"
+        "footer footer"
+}
+
+
+
+
+.entrevistas {
+    height: 34em;
+    width: 40em;
+    background-color: #3c3c6e;
+    color: antiquewhite;
+    font-size: 1em;
+    font-family: 'RobotoLight';
+    border-radius: 1em;
+    margin: 1em;
+}
+
+.listado,
+.listado1,
+.listado2 {
+    padding: 1em;
+}
+
+.fotolateralprensa1 {
+    height: 34em;
+    width: 31em;
+    border-radius: 1em;
+    margin: 1em;
+}
+
+
+.gridcontainerD {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;
+    column-gap: 4em;
+    grid-template-areas: "header nav"
+        "section aside"
+        "footer footer";
+}
+
+
+
+
+
+@media screen and (min-width: 320px) {
+
+    .gridcontainerA {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: "header"
+            "nav "
+            "nav"
+            "main"
+            "section"
+            "aside"
+            "footer";
+        column-gap: 4em;
+        row-gap: 2em;
+        align-items: center;
+
+    }
+
+    .cadaboton {
+        padding-inline: 3em;
+    }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .gridcontainerA {
+
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 10em 4fr 1fr;
+        grid-template-areas: "header nav"
+            "main main"
+            "section aside"
+            "footer footer";
+        column-gap: 4em;
+        row-gap: 2em;
+    }
+
+
+}
+
+
+.gridcontainert {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 10em 10 em 1fr;
+    grid-template-areas: "header nav"
+        "main main"
+        "main main"
+        "section section"
+        "footer footer"
+}
+
