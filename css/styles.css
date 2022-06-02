@@ -730,14 +730,14 @@ h4 {
     font-size: 1em;
     text-align: justify;
     height: 15em;
-    width: 60em;
+    width: fit-content;
     line-height: 1em;
     margin: 1em;
     padding: 0em;
     line-height: 2em;
     display: flexbox;
-    background-color: aliceblue;
-
+    background-color:#ecf0f1;
+text-align: center;
 }
 
 
@@ -902,7 +902,6 @@ footer {
 
 
 
-    .textos { width: max-content;}
     .video1 {align-self: flex-end;}
     .cadaboton {
         padding-inline: 3em;
