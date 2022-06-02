@@ -6,123 +6,156 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Artificio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body>
+<body class="container-fluid bodycolor">
     <div class="gridcontainerA">
-        <header class="headerindex">
-
-            <div class="encabezado">
-
-                <div class="logo">
-                    <img src="./img/logo/logohorizontal.jpg" alt="logo">
-
-                </div>
-
-
-            </div>
-
-
-
+        <header class="headerindex container">
 
         </header>
 
-        <nav>
-            <div id="menu" class="animate__animated animate__pulse">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light colornav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="/img/logo/logohorizontal-removebg-preview.png" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/index.html">Principal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/proceso.html">Proceso</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/prensa.html">Prensa</a>
+                        </li>
 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle colordesplegable" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Teatros
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Politeama</a></li>
+                                <li><a class="dropdown-item" href="#">Teatro Bastion</a></li>
+                                <li><a class="dropdown-item" href="#">Teatro Young</a></li>
+                                <li><a class="dropdown-item" href="#">Teatro Florencio</a></li>
+                                <li><a class="dropdown-item" href="#">Teatro Maccio</a></li>
 
-                <ul class="menu2">
-                    <li class="menu3"><a class="menu4" href="index.html">Página Principal</a></li>
-                    <li class="menu3"><a class="menu4" href="pages/proceso.html">Proceso</a></li>
-                    <li class="menu3"><a class="menu4" href="pages/contacto.html">Contacto</a></li>
-                    <li class="menu3"><a class="menu4" href="pages/prensa.html">Prensa</a></li>
-                </ul>
+                            </ul>
+                        </li>
 
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2 colorboton" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <button class=" btn btn-outline-colorboton" type="submit colorboton">Search</button>
+                    </form>
+                </div>
             </div>
         </nav>
-        <main class="botones">
-
-
-            <ul class="listadebotones">
-                <li class="cadaboton"> <a class="textoboton" href=>Teatro Maccio</a></li>
-                <li class="cadaboton"><a class="textoboton" href=>Teatro Bastión</a></li>
-                <li class="cadaboton"><a class="textoboton" href>Teatro Florencio</a></li>
-                <li class="cadaboton"><a class="textoboton" href=>Politeama</a></li>
-                <li class="cadaboton"><a class="textoboton" href=>Teatro Young</a></li>
-            </ul>
 
 
 
+        <section class="textos container">
+
+            <div class="row">
+
+                <article class="texto1 col">
+
+                    <h3 class="subtitulos">Teatro y Memoria</h3>
+                    <p>Artificio, Memorias de los Teatros del Río es un proyecto que vincula al teatro con la memoria de
+                        los espectadores, poniendo el foco en las vivencias del espacio teatral que trascienden el
+                        tiempo de la representación. Un registro de lo inasible, la emoción detrás del aplauso. Es una
+                        pesquisa que pone el foco en las vivencias que trascienden el tiempo de la representación. </p>
+                </article>
+
+
+            </div>
+
+            <img src="./img/slider2.jpg" class="img-thumbnail politeama" alt="teatro">
+            <img src="./img/Politeama.jpg" class="img-thumbnail politeama" alt="teatrp">
+
+
+            <div class="row">
+
+                <article class="texto2 col">
+                    <h3 class="subtitulos">Experiencias Multimedia</h3>
+                    <p>Mediante el recorrido de una instalación interactiva, donde cada objeto nos traslada a los
+                        recuerdos de un espectador, invitamos al público a poner el foco en la platea y resignificar la
+                        importancia de los espectadores.
+                        Diecinueve entrevistados, en los cinco departamentos, compartieron sus experiencias en torno al
+                        centro cultural y fueron la inspiración para crear la instalación. </p>
+                </article>
+            </div>
+
+
+            <img src="./img/i-84.jpg" class="img-thumbnail politeama" alt="experiencia">
+            <img src="./img/1-8.jpg" class="img-thumbnail politeama" alt="experiencia">
 
 
 
-        </main>
-
-        <section class="textos animate__animated animate__backInLeft">
-
-            <article class="texto1">
-
-                <h3>Teatro y Memoria</h3>
-                <p>Artificio, Memorias de los Teatros del Río es un proyecto que vincula al teatro con la memoria de
-                    los espectadores, poniendo el foco en las vivencias del espacio teatral que trascienden el
-                    tiempo de la representación. Un registro de lo inasible, la emoción detrás del aplauso. Es una
-                    pesquisa que pone el foco en las vivencias que trascienden el tiempo de la representación. </p>
-            </article>
-
-
-            <article class="texto2">
-                <h3>Experiencias Multimedia</h3>
-                <p>Mediante el recorrido de una instalación interactiva, donde cada objeto nos traslada a los
-                    recuerdos de un espectador, invitamos al público a poner el foco en la platea y resignificar la
-                    importancia de los espectadores.
-                    Diecinueve entrevistados, en los cinco departamentos, compartieron sus experiencias en torno al
-                    centro cultural y fueron la inspiración para crear la instalación. </p>
-            </article>
         </section>
 
 
-        <aside class="multimedia">
+        <div>
 
-            <iframe class="video1" width="560" height="315" src="https://www.youtube.com/embed/SSzKtsJpFIo"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+            <div>
 
-
-            <img class="fotomultimedia" src="./img/multimedia.jpg" class="foto" alt="fotomultimedia">
-
-
-        </aside>
-
-
-        <footer class="footerindex">
-
-            <div class="social">
-
-                <ul class="redes">
-                    <li class="redes1"><a class="redes2"
-                            href="https://www.instagram.com/proyectoartificio/">Instagram</a>
-                    </li>
-                    <li class="redes1"> <a class="redes2"
-                            href="https://www.youtube.com/channel/UCBzy2Wfm4bj820Ms-pN7aRA">Youtube</a></li>
-                    <li class="redes1"> <a class="redes2" href="https://www.whatsapp.com/">Whatsapp</a></li>
-                </ul>
             </div>
 
-            <div class="derechos">
-                <p class="derechos">Copyright 2022 - Todos los derechos reservados</p>
+        </div>
+
+
+<footer>
+    <div class="container-fluid">
+        <div class="row p-5 bg-secondary text-white">
+
+
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h4">Proyecto Artificio</p>
+                <div> <a class="text-white" href="/index.html">Principal</a></div>
+                <div>
+                    <a class="text-white" href="./pages/contacto.html">Contacto</a></div>
+                <div>
+                    <a class="text-white" href="./pages/prensa.html">Prensa</a></div>
+                <div> <a class="text-white" href="./pages/proceso.html">Proceso</a></div>
+
             </div>
 
-            <span class="caja1">
-                <article></article>
-            </span>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h6">Redes Sociales</p>
+
+                <div> <a class="text-white"
+                    href="https://www.instagram.com/proyectoartificio/">Instagram</a></div>
+                <div><a class="text-white"
+                    href="https://www.youtube.com/channel/UCBzy2Wfm4bj820Ms-pN7aRA">Youtube</a></div>
+                <div><a class="text-white" href="https://www.whatsapp.com/">Whatsapp</a></div>
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <p class="h6">Terminos y condiciones</p>
+            </div>
+
+        </div>
 
 
-        </footer>
+    </div>
+</footer>
+       
+
+
 
 
     </div>
@@ -130,6 +163,12 @@
 
 
 
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

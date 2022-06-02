@@ -585,10 +585,18 @@ footer {
 }
 
 @font-face {
-    font-family: 'RobotoItalic';
-    src: url(../fonts/Roboto/Roboto-BlackItalic.ttf);
+    font-family: 'Journal';
+    src: url(../fonts/journal.ttf);
 
 }
+
+
+@font-face {
+    font-family: 'RobotoThinItalic';
+    src: url(../fonts/Roboto/Roboto-ThinItalic.ttf);
+
+}
+
 
 
 
@@ -598,20 +606,23 @@ footer {
     box-sizing: border-box;
 }
 
-
+/*
 .gridcontainerA {
 
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 10em 4fr 1fr;
+    grid-template-rows: 1fr 10em 4fr 4fr 1fr ;
     grid-template-areas: "header nav"
         "main main"
-        "section aside"
+        "section section"
+        "div div"
         "footer footer";
     column-gap: 4em;
     row-gap: 2em;
 }
+*/
+
 
 header {
     grid-area: header;
@@ -705,39 +716,31 @@ footer {
 }
 
 
-h3 {
-    font-family: 'RobotoBold';
-    font-size: 1em;
-}
 
 h4 {
     font-family: 'RobotoBold';
     font-size: 1em;
 }
 
+.subtitulos { font-family: 'Journal'; color: antiquewhite; font-size: 3em; text-align: center; background-color: #3c3c6e;} 
+
 .texto1,
 .texto2 {
     font-family: 'RobotoLight';
     font-size: 1em;
     text-align: justify;
-    height: 18em;
-    width: 25em;
+    height: 15em;
+    width: 60em;
     line-height: 1em;
-    margin: 2em;
-    padding: 1em;
+    margin: 1em;
+    padding: 0em;
     line-height: 2em;
     display: flexbox;
 
 }
 
 
-.fotomultimedia {
-    height: 21em;
-    width: 28em;
-    margin: 1em;
-    padding: 1em;
-    border-radius: 10%;
-}
+.textos {height: fit-content;}
 
 
 .derechos {
@@ -749,7 +752,7 @@ h4 {
 
 
 
-
+/*
 .gridcontainerB {
 
     display: grid;
@@ -763,6 +766,7 @@ h4 {
     row-gap: 4em;
 }
 
+*/
 
 header {
     grid-area: header;
@@ -787,23 +791,27 @@ footer {
     width: 31em;
     border-radius: 1em;
     grid-area: contacto;
+    margin: 1em;
 }
 
 .tituloform {
     font-family: 'Roboto';
     color: antiquewhite;
+    align-self: center;
+    text-align: center;
 }
 
 .formulario {
     height: 34em;
-    width: 40em;
+    width: 35em;
     background-color: #3c3c6e;
     color: antiquewhite;
     font-size: 1em;
     font-family: 'RobotoLight';
     padding-inline: 1em;
     border-radius: 1em;
-    margin: 1em
+    margin: 1em;
+
 }
 
 .listaform {
@@ -834,7 +842,7 @@ footer {
 .maquetas2,
 .maquetas3 {
     height: 18em;
-    width: 30em;
+    width: 29em;
     margin: 1em;
     border-radius: 10%;
 }
@@ -892,51 +900,19 @@ footer {
 
 
 
-@media screen and (min-width: 320px) {
 
-    .gridcontainerA {
-
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-        grid-template-areas: "header"
-            "nav "
-            "nav"
-            "main"
-            "section"
-            "aside"
-            "footer";
-        column-gap: 4em;
-        row-gap: 2em;
-        align-items: center;
-
-    }
-
+    .textos { width: max-content;}
+    .video1 {align-self: flex-end;}
     .cadaboton {
         padding-inline: 3em;
     }
 
 
-}
-
-@media screen and (min-width: 1200px) {
-
-    .gridcontainerA {
-
-        display: grid;
-        height: 100vh;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 10em 4fr 1fr;
-        grid-template-areas: "header nav"
-            "main main"
-            "section aside"
-            "footer footer";
-        column-gap: 4em;
-        row-gap: 2em;
-    }
 
 
 }
+
+
 
 
 .gridcontainert {
@@ -951,3 +927,19 @@ footer {
         "footer footer"
 }
 
+
+
+
+
+
+
+/*estilos para elementos BS*/
+
+
+.colornav {background-color: whitesmoke !important;}
+.colordesplegable { color: #3c3c6e !important;}
+.bodycolor {background-color: white;}
+.colorboton { color: #3c3c6e !important;}
+.politeama { width: 500px !important ; height: 300px;}
+.pimagen {     height: 34em;
+    width: 31em; margin: 0em; padding: 0em; border: 0em; display: flexbox;} 
