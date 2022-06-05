@@ -585,8 +585,8 @@ footer {
 }
 
 @font-face {
-    font-family: 'Journal';
-    src: url(../fonts/journal.ttf);
+    font-family: 'Quick';
+    src: url(../fonts/quicksand/Quicksand-Regular.otf);
 
 }
 
@@ -722,12 +722,13 @@ h4 {
     font-size: 1em;
 }
 
-.subtitulos { font-family: 'Journal'; color: antiquewhite; font-size: 3em; text-align: center; background-color: #3c3c6e;} 
+.subtitulos { font-family: 'quick'; color: antiquewhite; font-size: 2em; text-align: center; background-color: #2f3542;} 
 
-.texto1,
-.texto2 {
-    font-family: 'RobotoLight';
-    font-size: 1em;
+
+
+.proceso1, .proceso2, .proceso3 {
+    font-family: 'Roboto';
+    font-size: 18px;
     text-align: justify;
     height: fit-content;
     width: fit-content;
@@ -736,8 +737,27 @@ h4 {
     padding: 0em;
     line-height: 2em;
     display: flexbox;
-    background-color:#ecf0f1;
 text-align: center;
+font-weight: 500;
+}
+
+.texto1,
+.texto2
+{
+
+    font-family: 'Roboto';
+    font-size: 18px;
+    text-align: justify;
+    height: fit-content;
+    width: fit-content;
+    line-height: 1em;
+    margin: 1em;
+    padding: 0em;
+    line-height: 2em;
+    display: flexbox;
+text-align: center;
+font-weight: 500;
+
 }
 
 
@@ -800,20 +820,27 @@ footer {
     color: antiquewhite;
     align-self: center;
     text-align: center;
+    height: fit-content;
+    width: fit-content;
 }
 
 .formulario {
-    height: 34em;
-    width: 35em;
+    height: 38em;
+    width: max-content;
     background-color: #3c3c6e;
     color: antiquewhite;
     font-size: 1em;
     font-family: 'RobotoLight';
     padding-inline: 1em;
     border-radius: 1em;
-    margin: 1em;
+    margin: 1em; 
+    align-self: center
+;
+
 
 }
+
+.cajaazul {margin: 0% !important; padding: 0%; align-self: center !important;}
 
 .listaform {
     padding: 3em;
@@ -825,19 +852,7 @@ footer {
 
 
 
-.proceso1,
-.proceso2,
-.proceso3 {
-    font-family: 'RobotoLight';
-    font-size: 1em;
-    text-align: justify;
-    line-height: 2em;
-    height: 18em;
-    width: 28em;
-    margin: 1em;
-    padding: 1em;
 
-}
 
 .maquetas1,
 .maquetas2,
@@ -848,6 +863,7 @@ footer {
     border-radius: 10%;
 }
 
+/*
 .gridcontainerC {
     display: grid;
     height: 100vh;
@@ -859,12 +875,12 @@ footer {
         "footer footer"
 }
 
-
+*/
 
 
 .entrevistas {
     height: 34em;
-    width: 40em;
+    width: auto;
     background-color: #3c3c6e;
     color: antiquewhite;
     font-size: 1em;
@@ -886,6 +902,7 @@ footer {
     margin: 1em;
 }
 
+/*
 
 .gridcontainerD {
     display: grid;
@@ -897,7 +914,7 @@ footer {
         "footer footer";
 }
 
-
+*/
 
 
 
@@ -910,10 +927,9 @@ footer {
 
 
 
-}
 
 
-
+/*
 
 .gridcontainert {
     display: grid;
@@ -928,7 +944,7 @@ footer {
 }
 
 
-
+*/
 
 
 
@@ -943,3 +959,6 @@ footer {
 .politeama { width: 500px !important ; height: 300px;}
 .pimagen {     height: 34em;
     width: 31em; margin: 0em; padding: 0em; border: 0em; display: flexbox;} 
+.todo {background-image: url(/img/v748-toon-103.jpg) !important; align-items: center;}
+.cajaprensa {margin: 1em;  align-items:center;}
+.caro {justify-self: center; padding-left: 5em !important;}
