@@ -826,15 +826,16 @@ footer {
 
 .formulario {
     height: 38em;
-    width: max-content;
+    width: auto;
     background-color: #3c3c6e;
     color: antiquewhite;
     font-size: 1em;
     font-family: 'RobotoLight';
-    padding-inline: 1em;
+    padding-inline: 2em;
     border-radius: 1em;
     margin: 1em; 
-    align-self: center
+    align-self: center;
+    text-align: left
 ;
 
 
@@ -845,6 +846,7 @@ footer {
 .listaform {
     padding: 3em;
     list-style: none;
+    padding-inline: 2em;
 }
 
 
@@ -887,6 +889,7 @@ footer {
     font-family: 'RobotoLight';
     border-radius: 1em;
     margin: 1em;
+    align-self: center;
 }
 
 .listado,
@@ -962,3 +965,11 @@ footer {
 .todo {background-image: url(../img/19742.jpg) !important; align-items: center;}
 .cajaprensa {margin: 1em;  align-items:center;}
 .caro {justify-self: center; padding-left: 5em !important;}
+.ingreseform {padding: 1em;}
+.redesindex { display: inline-flex; padding: 1em;}
+.cadared {padding: 1em; list-style: none;}
+
+* .container-fluid, .container, .row {
+    padding-left: 0 !important;
+    padding-right: 0 !important; 
+}
