@@ -1,830 +1,169 @@
-
-/*
-
-
-@font-face {
-    font-family: 'Roboto';
-    src: url(../fonts/Roboto/Roboto-Regular.ttf);
-}
-
-@font-face {
-    font-family: 'RobotoBold';
-    src: url(../fonts/Roboto/Roboto-Bold.ttf);
-
-}
-
-@font-face {
-    font-family: 'RobotoLight';
-    src: url(../fonts/Roboto/Roboto-Light.ttf);
-
-}
-
-@font-face {
-    font-family: 'RobotoItalic';
-    src: url(../fonts/Roboto/Roboto-BlackItalic.ttf);
-
-}
-
-
-
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-.gridcontainerA {
+* .container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+  * .container-fluid .row {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+  * .container-fluid .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
 
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 10em 2fr 30em 1fr 1fr;
-    grid-template-areas: "header"
-        "nav"
-        "main"
-        "section"
-        "aside"
-        "footer";
-    column-gap: 0, 5em;
-    row-gap: 2em;
+@font-face {
+  font-family: 'Roboto';
+  src: url(../fonts/Roboto/Roboto-Regular.ttf); }
 
-}
+@font-face {
+  font-family: 'RobotoBold';
+  src: url(../fonts/Roboto/Roboto-Bold.ttf); }
 
-.botones,
-.todoslosbotones,
-.listadebotones,
-.cadaboton {
-    display: inline-flex;
-}
+@font-face {
+  font-family: 'RobotoLight';
+  src: url(../fonts/Roboto/Roboto-Light.ttf); }
 
-.cadaboton {
-    padding-right: 5em;
-}
+@font-face {
+  font-family: 'Quick';
+  src: url(../fonts/quicksand/Quicksand-Regular.otf); }
 
-.botones {
-    height: 4em;
-    width: 84,5em;
-    align-content: center;
-    justify-items: center;
-    padding: 0em;
-}
+@font-face {
+  font-family: 'RobotoThinItalic';
+  src: url(../fonts/Roboto/Roboto-ThinItalic.ttf); }
 
-.menu,
-.menu2,
-.menu3,
-.menu4 {
-    display: inline;
-}
-
-.menu {
-    display: flex;
-
-}
-
-.menu2,
-.menu4 {
-    font-family: 'RobotoBold';
-    display: inline-flex;
-    font-size: 1em;
-    text-decoration: none;
-    background-color: lightgrey;
-    overflow: hidden;
-    color: #3c3c6e;
-    padding: 1em;
-    margin: 1em;
-    height: 5em;
-    width: max-content;
-    border-radius: 2em;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
-nav {
-    justify-self: center;
-}
-
-.header {
-    justify-self: center
-}
-
-.logo {
-    justify-self: center
-}
-
-.botones,
-.todoslosbotones,
-.listadebotones,
-.textoboton {
-    font-family: 'Roboto';
-    font-size: 1em;
-    display: inline-flex;
-    flex-direction: row;
-    text-align: center;
-    text-decoration: none;
-    color: whitesmoke;
-    background-color: #3c3c6e;
-
-    justify-content: center;
-    align-items: center;
-
-
-}
-
-
-.social,
-.redes,
-.redes1 {
-    display: inline;
-    font-family: 'Roboto';
-    font-size: 1em;
-}
-
-
-h3 {
-    font-family: 'RobotoBold';
-    font-size: 1em;
-}
-
-h4 {
-    font-family: 'RobotoBold';
-    font-size: 1em;
-}
-
-.textos {
-    margin: 1em;
-    padding: 1em;
-}
-
-.texto1,
-.texto2 {
-    font-family: 'RobotoLight';
-    font-size: 1em;
+.todo {
+  background-image: url(../img/19742.jpg) !important;
+  align-items: center; }
+  .todo .texto1 {
+    font-family: "Roboto";
+    font-size: 18px;
     text-align: justify;
-    height: 18em;
-    width: 40em;
+    height: fit-content;
+    width: fit-content;
     line-height: 1em;
+    margin: 1em;
+    padding: 0em;
     line-height: 2em;
     display: flexbox;
-
-}
-
-.multimedia {
-    align-items: center;
-    justify-items: center;
-    margin: 1em;
-    padding: 1em;
-}
-
-.fotomultimedia {
-    height: 21em;
-    width: 28em;
-    margin-left: 2em;
-    padding-left: 2em;
-    margin-top: 1em;
-    padding-top: 1em;
-    border-radius: 10%;
-}
-
-
-.video1 {
-    height: 21em;
-    width: 28em;
-    margin-left: 2em;
-    padding-left: 2em;
-    margin-top: 1em;
-    padding-top: 1em;
-    border-radius: 10%;
-}
-
-.derechos {
-    font-family: 'RobotoLight';
-    font-size: 1em;
-    text-align: right
-}
-
-
-
-
-
-.gridcontainerB {
-
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 4fr 1fr;
-    grid-template-areas: "header"
-        "nav"
-        "form"
-        "footer";
-    column-gap: 4em;
-    row-gap: 4em;
-}
-
-
-header {
-    grid-area: header;
-}
-
-main {
-    grid-area: main;
-}
-
-.form {
-    grid-area: form;
-}
-
-
-
-footer {
-    grid-area: footer;
-
-}
-
-.imagencontacto {
-    height: 34em;
-    width: 31em;
-    border-radius: 1em;
-    grid-area: contacto;
-}
-
-.tituloform {
-    font-family: 'Roboto';
-    color: antiquewhite;
-}
-
-.formulario {
-    height: 34em;
-    width: 40em;
-    background-color: #3c3c6e;
-    color: antiquewhite;
-    font-size: 1em;
-    font-family: 'RobotoLight';
-    padding-inline: 1em;
-    border-radius: 1em;
-    margin: 1em
-}
-
-.listaform {
-    padding: 3em;
-    list-style: none;
-}
-
-
-
-
-
-
-.proceso1,
-.proceso2,
-.proceso3 {
-    font-family: 'RobotoLight';
-    font-size: 1em;
+    text-align: center;
+    font-weight: 500; }
+    .todo .texto1 .subtitulos {
+      font-family: 'quick';
+      color: antiquewhite;
+      font-size: 2em;
+      text-align: center;
+      background-color: #2f3542; }
+  .todo .texto2 {
+    font-family: "Roboto";
+    font-size: 18px;
     text-align: justify;
+    height: fit-content;
+    width: fit-content;
+    line-height: 1em;
+    margin: 1em;
+    padding: 0em;
     line-height: 2em;
-    height: 18em;
-    width: 28em;
+    display: flexbox;
+    text-align: center;
+    font-weight: 500; }
+    .todo .texto2 .subtitulos {
+      font-family: 'quick';
+      color: antiquewhite;
+      font-size: 2em;
+      text-align: center;
+      background-color: #2f3542; }
+  .todo h4 {
+    font-family: 'RobotoBold';
+    font-size: 1em; }
+  .todo .redesindex {
+    display: inline-flex;
+    padding: 1em; }
+    .todo .redesindex .cadared {
+      padding: 1em;
+      list-style: none; }
+  .todo .proceso1 {
+    font-family: "Roboto";
+    font-size: 18px;
+    text-align: justify;
+    height: fit-content;
+    width: fit-content;
+    line-height: 1em;
     margin: 1em;
-    padding: 1em;
-
-}
-
-.maquetas1,
-.maquetas2,
-.maquetas3 {
-    height: 18em;
-    width: 30em;
+    padding: 0em;
+    line-height: 2em;
+    display: flexbox;
+    text-align: center;
+    font-weight: 500; }
+    .todo .proceso1 .subtitulos {
+      font-family: 'quick';
+      color: antiquewhite;
+      font-size: 2em;
+      text-align: center;
+      background-color: #2f3542; }
+  .todo .proceso2 {
+    font-family: "Roboto";
+    font-size: 18px;
+    text-align: justify;
+    height: fit-content;
+    width: fit-content;
+    line-height: 1em;
     margin: 1em;
-    border-radius: 10%;
-}
-
-.gridcontainerC {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
-    column-gap: 4em;
-    grid-template-areas: "header nav"
-        "section aside"
-        "footer footer"
-}
-
-
-
-
-.entrevistas {
-    height: 34em;
-    width: 40em;
-    background-color: #3c3c6e;
-    color: antiquewhite;
-    font-size: 1em;
-    font-family: 'RobotoLight';
-    border-radius: 1em;
-    margin: 1em;
-}
-
-.listado,
-.listado1,
-.listado2 {
-    padding: 1em;
-}
-
-.fotolateralprensa1 {
-    height: 34em;
-    width: 31em;
-    border-radius: 1em;
-    margin: 1em;
-}
-
-
-.gridcontainerD {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
-    column-gap: 4em;
-    grid-template-areas: "header nav"
-        "section aside"
-        "footer footer"
-}
-
-
-
-
-.gridcontainert {display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 40em 30em 1fr;
-    grid-template-areas: "header nav"
-"main main"
-"section section"
-"footer footer"}
-
-
-
-
-
-
-@media screen and (min-width: 1200px) {
-
-    .gridcontainerA {
-
-        display: grid;
-        height: 100vh;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 10em 4fr 1fr;
-        grid-template-areas: "header nav"
-            "main main"
-            "section aside"
-            "footer footer";
-        column-gap: 4em;
-        row-gap: 2em;
-
-    }
-
-
-
-    .botones,
-    .todoslosbotones,
-    .listadebotones,
-    .cadaboton {
-        display: inline-flex;
-    }
-
-    .botones {
-        height: 4em;
-    }
-
-    .menu,
-    .menu2,
-    .menu3,
-    .menu4 {
-        display: inline;
-    }
-
-    .menu {
-        display: flex;
-
-    }
-
-    .menu2,
-    .menu4 {
-        font-family: 'RobotoBold';
-        display: inline-flex;
-        font-size: 1em;
-        text-decoration: none;
-        background-color: lightgrey;
-        overflow: hidden;
-        color: #3c3c6e;
-        padding: 1em;
-        margin: 1em;
-        height: 5em;
-        width: max-content;
-        border-radius: 2em;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-    .botones,
-    .todoslosbotones,
-    .listadebotones,
-    .textoboton {
-        font-family: 'Roboto';
-        font-size: 1em;
-        display: inline-flex;
-        flex-direction: row;
+    padding: 0em;
+    line-height: 2em;
+    display: flexbox;
+    text-align: center;
+    font-weight: 500; }
+    .todo .proceso2 .subtitulos {
+      font-family: 'quick';
+      color: antiquewhite;
+      font-size: 2em;
+      text-align: center;
+      background-color: #2f3542; }
+    .todo .proceso2 .proceso3 {
+      font-family: "Roboto";
+      font-size: 18px;
+      text-align: justify;
+      height: fit-content;
+      width: fit-content;
+      line-height: 1em;
+      margin: 1em;
+      padding: 0em;
+      line-height: 2em;
+      display: flexbox;
+      text-align: center;
+      font-weight: 500; }
+      .todo .proceso2 .proceso3 .subtitulos {
+        font-family: 'quick';
+        color: antiquewhite;
+        font-size: 2em;
         text-align: center;
-        text-decoration: none;
-        color: whitesmoke;
+        background-color: #2f3542; }
+  .todo .padrecaja .cajaazul {
+    margin: 0% !important;
+    padding: 0%;
+    align-self: center !important; }
+    .todo .padrecaja .cajaazul .cajaprensa {
+      margin: 1em;
+      align-items: center; }
+      .todo .padrecaja .cajaazul .cajaprensa .cajaprensa2 .entrevistas {
+        height: 34em;
+        width: auto;
         background-color: #3c3c6e;
-
-        justify-content: center;
-        align-items: center;
-
-
-    }
-
-
-    .social,
-    .redes,
-    .redes1 {
-        display: inline;
-        font-family: 'Roboto';
+        color: antiquewhite;
         font-size: 1em;
-    }
-
-
-    h3 {
-        font-family: 'RobotoBold';
-        font-size: 1em;
-    }
-
-    h4 {
-        font-family: 'RobotoBold';
-        font-size: 1em;
-    }
-
-    .texto1,
-    .texto2 {
         font-family: 'RobotoLight';
-        font-size: 1em;
-        text-align: justify;
-        height: 18em;
-        width: 25em;
-        line-height: 1em;
-        margin: 2em;
-        padding: 1em;
-        line-height: 2em;
-        display: flexbox;
-
-    }
-
-
-    .fotomultimedia {
-        height: 21em;
-        width: 28em;
+        border-radius: 1em;
         margin: 1em;
-        padding: 1em;
-        border-radius: 10%;
-    }
-
-
-    .derechos {
-        font-family: 'RobotoLight';
-        font-size: 1em;
-        text-align: right
-    }
-
-
-    .gridcontainerB {
-
-        display: grid;
-        height: 100vh;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 4fr 1fr;
-        grid-template-areas: "header nav"
-            "form contacto"
-            "footer footer";
-        column-gap: 4em;
-        row-gap: 4em;
-    }
-
-    header {
-        grid-area: header;
-    }
-    
-    main {
-        grid-area: main;
-    }
-    
-    .form {
-        grid-area: form;
-    }
-    
-    
-    
-    footer {
-        grid-area: footer;
-    }
-    .imagencontacto {
-        height: 34em;
-        width: 31em;
-        border-radius: 1em;
-        grid-area: contacto;
-    }
-    
-    .tituloform {
-        font-family: 'Roboto';
-        color: antiquewhite;
-    }
-    
-    .formulario {
-        height: 34em;
-        width: 40em;
-        background-color: #3c3c6e;
-        color: antiquewhite;
-        font-size: 1em;
-        font-family: 'RobotoLight';
-        padding-inline: 1em;
-        border-radius: 1em;
-        margin:1em
-    }
-    
-    .listaform { padding: 3em; list-style: none;
-    }
-
-
-}
-
-
-@media screen and (max-width: 480px) {
-    .imagencontacto {display: none;}
-*/
-
-
-
-
-
-@font-face {
-    font-family: 'Roboto';
-    src: url(../fonts/Roboto/Roboto-Regular.ttf);
-
-}
-
-@font-face {
-    font-family: 'RobotoBold';
-    src: url(../fonts/Roboto/Roboto-Bold.ttf);
-
-}
-
-@font-face {
-    font-family: 'RobotoLight';
-    src: url(../fonts/Roboto/Roboto-Light.ttf);
-
-}
-
-@font-face {
-    font-family: 'Quick';
-    src: url(../fonts/quicksand/Quicksand-Regular.otf);
-
-}
-
-
-@font-face {
-    font-family: 'RobotoThinItalic';
-    src: url(../fonts/Roboto/Roboto-ThinItalic.ttf);
-
-}
-
-
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/*
-.gridcontainerA {
-
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 10em 4fr 4fr 1fr ;
-    grid-template-areas: "header nav"
-        "main main"
-        "section section"
-        "div div"
-        "footer footer";
-    column-gap: 4em;
-    row-gap: 2em;
-}
-*/
-
-
-header {
-    grid-area: header;
-}
-
-main {
-    grid-area: main;
-}
-
-section {
-    grid-area: section;
-}
-
-aside {
-    grid-area: aside;
-}
-
-footer {
-    grid-area: footer;
-}
-
-.botones,
-.todoslosbotones,
-.listadebotones,
-.cadaboton {
-    display: inline-flex;
-}
-
-.botones {
-    height: 4em;
-}
-
-.menu,
-.menu2,
-.menu3,
-.menu4 {
-    display: inline;
-}
-
-.menu {
-    display: flex;
-
-}
-
-.menu2,
-.menu4 {
-    font-family: 'RobotoBold';
-    display: inline-flex;
-    font-size: 1em;
-    text-decoration: none;
-    background-color: lightgrey;
-    overflow: hidden;
-    color: #3c3c6e;
-    padding: 1em;
-    margin: 1em;
-    height: 5em;
-    width: max-content;
-    border-radius: 2em;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.botones,
-.todoslosbotones,
-.listadebotones,
-.textoboton {
-    font-family: 'Roboto';
-    font-size: 1em;
-    display: inline-flex;
-    flex-direction: row;
-    text-align: center;
-    text-decoration: none;
-    color: whitesmoke;
-    background-color: #3c3c6e;
-
-    justify-content: center;
-    align-items: center;
-
-
-}
-
-
-.social,
-.redes,
-.redes1 {
-    display: inline;
-    font-family: 'Roboto';
-    font-size: 1em;
-}
-
-
-
-h4 {
-    font-family: 'RobotoBold';
-    font-size: 1em;
-}
-
-.subtitulos { font-family: 'quick'; color: antiquewhite; font-size: 2em; text-align: center; background-color: #2f3542;} 
-
-
-
-.proceso1, .proceso2, .proceso3 {
-    font-family: 'Roboto';
-    font-size: 18px;
-    text-align: justify;
-    height: fit-content;
-    width: fit-content;
-    line-height: 1em;
-    margin: 1em;
-    padding: 0em;
-    line-height: 2em;
-    display: flexbox;
-text-align: center;
-font-weight: 500;
-}
-
-.texto1,
-.texto2
-{
-
-    font-family: 'Roboto';
-    font-size: 18px;
-    text-align: justify;
-    height: fit-content;
-    width: fit-content;
-    line-height: 1em;
-    margin: 1em;
-    padding: 0em;
-    line-height: 2em;
-    display: flexbox;
-text-align: center;
-font-weight: 500;
-
-}
-
-
-.textos {height: fit-content;}
-
-
-.derechos {
-    font-family: 'RobotoLight';
-    font-size: 1em;
-    text-align: right
-}
-
-
-
-
-/*
-.gridcontainerB {
-
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
-    grid-template-areas: "header nav"
-        "form contacto"
-        "footer footer";
-    column-gap: 4em;
-    row-gap: 4em;
-}
-
-*/
-
-header {
-    grid-area: header;
-}
-
-main {
-    grid-area: main;
-}
-
-.form {
-    grid-area: form;
-}
-
-
-
-footer {
-    grid-area: footer;
-}
-
-.imagencontacto {
-    height: 34em;
-    width: 31em;
-    border-radius: 1em;
-    grid-area: contacto;
-    margin: 1em;
-}
-
-.tituloform {
-    font-family: 'Roboto';
-    color: antiquewhite;
-    align-self: center;
-    text-align: center;
-    height: fit-content;
-    width: fit-content;
-}
-
-.formulario {
+        align-self: center; }
+        .todo .padrecaja .cajaazul .cajaprensa .cajaprensa2 .entrevistas .listado {
+          padding: 1em; }
+          .todo .padrecaja .cajaazul .cajaprensa .cajaprensa2 .entrevistas .listado .listado1 {
+            padding: 1em; }
+            .todo .padrecaja .cajaazul .cajaprensa .cajaprensa2 .entrevistas .listado .listado1 .listado2 {
+              padding: 1em; }
+  .todo .formulario {
     height: 38em;
     width: auto;
     background-color: #3c3c6e;
@@ -833,143 +172,19 @@ footer {
     font-family: 'RobotoLight';
     padding-inline: 2em;
     border-radius: 1em;
-    margin: 1em; 
-    align-self: center;
-    text-align: left
-;
-
-
-}
-
-.cajaazul {margin: 0% !important; padding: 0%; align-self: center !important;}
-
-.listaform {
-    padding: 3em;
-    list-style: none;
-    padding-inline: 2em;
-}
-
-
-
-
-
-
-
-
-.maquetas1,
-.maquetas2,
-.maquetas3 {
-    height: 18em;
-    width: 29em;
-    margin: 1em;
-    border-radius: 10%;
-}
-
-/*
-.gridcontainerC {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
-    column-gap: 4em;
-    grid-template-areas: "header nav"
-        "section aside"
-        "footer footer"
-}
-
-*/
-
-
-.entrevistas {
-    height: 34em;
-    width: auto;
-    background-color: #3c3c6e;
-    color: antiquewhite;
-    font-size: 1em;
-    font-family: 'RobotoLight';
-    border-radius: 1em;
     margin: 1em;
     align-self: center;
-}
-
-.listado,
-.listado1,
-.listado2 {
-    padding: 1em;
-}
-
-.fotolateralprensa1 {
-    height: 34em;
-    width: 31em;
-    border-radius: 1em;
-    margin: 1em;
-}
-
-/*
-
-.gridcontainerD {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 4fr 1fr;
-    column-gap: 4em;
-    grid-template-areas: "header nav"
-        "section aside"
-        "footer footer";
-}
-
-*/
-
-
-
-
-    .video1 {align-self: flex-end;}
-    .cadaboton {
-        padding-inline: 3em;
-    }
-
-
-
-
-
-
-/*
-
-.gridcontainert {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 10em 10 em 1fr;
-    grid-template-areas: "header nav"
-        "main main"
-        "main main"
-        "section section"
-        "footer footer"
-}
-
-
-*/
-
-
-
-
-/*estilos para elementos BS*/
-
-
-.colornav {background-color: whitesmoke !important;}
-.colordesplegable { color: #3c3c6e !important;}
-.bodycolor {background-color: white;}
-.colorboton { color: #3c3c6e !important;}
-.politeama { width: 500px !important ; height: 300px;}
-.pimagen {     height: 34em;
-    width: 31em; margin: 0em; padding: 0em; border: 0em; display: flexbox;} 
-.todo {background-image: url(../img/19742.jpg) !important; align-items: center;}
-.cajaprensa {margin: 1em;  align-items:center;}
-.caro {justify-self: center; padding-left: 5em !important;}
-.ingreseform {padding: 1em;}
-.redesindex { display: inline-flex; padding: 1em;}
-.cadared {padding: 1em; list-style: none;}
-
-* .container-fluid, .container, .row {
-    padding-left: 0 !important;
-    padding-right: 0 !important; 
-}
+    text-align: left; }
+    .todo .formulario .tituloform {
+      font-family: 'Roboto';
+      color: antiquewhite;
+      align-self: center;
+      text-align: center;
+      height: fit-content;
+      width: fit-content; }
+    .todo .formulario .listaform {
+      padding: 3em;
+      list-style: none;
+      padding-inline: 2em; }
+      .todo .formulario .listaform .ingreseform {
+        padding: 1em; }

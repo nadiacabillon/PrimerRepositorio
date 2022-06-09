@@ -1,0 +1,281 @@
+@import 'variables';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+* .container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    .row {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .container {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+
+}
+@font-face {
+    font-family: 'RobotoBold';
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+
+}
+@font-face {
+    font-family: 'RobotoLight';
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+
+}
+@font-face {
+    font-family: 'Quick';
+    src: url(../fonts/quicksand/Quicksand-Regular.otf);
+
+}
+@font-face {
+    font-family: 'RobotoThinItalic';
+    src: url(../fonts/Roboto/Roboto-ThinItalic.ttf);
+
+}
+
+
+.todo {
+    background-image: url(../img/19742.jpg) !important;
+    align-items: center;
+
+    .texto1 {
+        font-family: $fuente-parrafos;
+        font-size: 18px;
+        text-align: justify;
+        height: fit-content;
+        width: fit-content;
+        line-height: 1em;
+        margin: 1em;
+        padding: 0em;
+        line-height: 2em;
+        display: flexbox;
+        text-align: center;
+        font-weight: 500;
+
+        .subtitulos {
+            font-family: 'quick';
+            color: antiquewhite;
+            font-size: 2em;
+            text-align: center;
+            background-color: #2f3542;
+        }
+    }
+
+    .texto2 {
+        font-family: $fuente-parrafos;
+        font-size: 18px;
+        text-align: justify;
+        height: fit-content;
+        width: fit-content;
+        line-height: 1em;
+        margin: 1em;
+        padding: 0em;
+        line-height: 2em;
+        display: flexbox;
+        text-align: center;
+        font-weight: 500;
+
+        .subtitulos {
+            font-family: 'quick';
+            color: antiquewhite;
+            font-size: 2em;
+            text-align: center;
+            background-color: #2f3542;
+        }
+
+    }
+
+    h4 {
+        font-family: 'RobotoBold';
+        font-size: 1em;
+    }
+
+    .redesindex {
+        display: inline-flex;
+        padding: 1em;
+
+        .cadared {
+            padding: 1em;
+            list-style: none;
+        }
+
+    }
+
+    .proceso1 {
+        font-family: $fuente-parrafos;
+        font-size: 18px;
+        text-align: justify;
+        height: fit-content;
+        width: fit-content;
+        line-height: 1em;
+        margin: 1em;
+        padding: 0em;
+        line-height: 2em;
+        display: flexbox;
+        text-align: center;
+        font-weight: 500;
+
+        .subtitulos {
+            font-family: 'quick';
+            color: antiquewhite;
+            font-size: 2em;
+            text-align: center;
+            background-color: #2f3542;
+        }
+
+
+    }
+
+    .proceso2 {
+        font-family: $fuente-parrafos;
+        font-size: 18px;
+        text-align: justify;
+        height: fit-content;
+        width: fit-content;
+        line-height: 1em;
+        margin: 1em;
+        padding: 0em;
+        line-height: 2em;
+        display: flexbox;
+        text-align: center;
+        font-weight: 500;
+
+        .subtitulos {
+            font-family: 'quick';
+            color: antiquewhite;
+            font-size: 2em;
+            text-align: center;
+            background-color: #2f3542;
+        }
+
+        .proceso3 {
+            font-family: $fuente-parrafos;
+            font-size: 18px;
+            text-align: justify;
+            height: fit-content;
+            width: fit-content;
+            line-height: 1em;
+            margin: 1em;
+            padding: 0em;
+            line-height: 2em;
+            display: flexbox;
+            text-align: center;
+            font-weight: 500;
+
+            .subtitulos {
+                font-family: 'quick';
+                color: antiquewhite;
+                font-size: 2em;
+                text-align: center;
+                background-color: #2f3542;
+            }
+
+
+        }
+
+    }
+
+
+    .padrecaja {
+
+        .cajaazul {
+            margin: 0% !important;
+            padding: 0%;
+            align-self: center !important;
+
+            .cajaprensa {
+                margin: 1em;
+                align-items: center;
+
+                .cajaprensa2 {
+
+                    .entrevistas {
+                        height: 34em;
+                        width: auto;
+                        background-color: $color-detalles;
+                        color: antiquewhite;
+                        font-size: 1em;
+                        font-family: 'RobotoLight';
+                        border-radius: 1em;
+                        margin: 1em;
+                        align-self: center;
+
+                        .listado {
+                            padding: 1em;
+
+
+                            .listado1 {
+                                padding: 1em;
+
+                                .listado2 {
+                                    padding: 1em;
+                                }
+
+                            }
+
+                        }
+
+
+
+                    }
+                }
+
+            }
+        }
+
+
+
+    }
+
+    .formulario {
+        height: 38em;
+        width: auto;
+        background-color: $color-detalles;
+        color: antiquewhite;
+        font-size: 1em;
+        font-family: 'RobotoLight';
+        padding-inline: 2em;
+        border-radius: 1em;
+        margin: 1em;
+        align-self: center;
+        text-align: left;
+
+        .tituloform {
+            font-family: 'Roboto';
+            color: antiquewhite;
+            align-self: center;
+            text-align: center;
+            height: fit-content;
+            width: fit-content;
+        }
+
+        .listaform {
+            padding: 3em;
+            list-style: none;
+            padding-inline: 2em;
+
+            .ingreseform {
+                padding: 1em;
+            }
+
+
+        }
+
+    }
+
+
+}
