@@ -1,3 +1,12 @@
+.fuenteinsta blueviolet {
+  text-decoration: "underline;"; }
+
+.fuenteyoutu red {
+  text-decoration: "underline;"; }
+
+.fuentewpp lightgreen {
+  text-decoration: "underline;"; }
+
 * {
   margin: 0;
   padding: 0;
@@ -188,3 +197,27 @@
       padding-inline: 2em; }
       .todo .formulario .listaform .ingreseform {
         padding: 1em; }
+
+.fuente {
+  font-family: "Roboto"; }
+
+.insta {
+  color: blueviolet; }
+
+.youtu {
+  color: red; }
+
+.wpp {
+  color: lightgreen; }
+
+.prueba {
+  color: red; }
+
+.textoresaltado, .titulopie {
+  font-weight: 700;
+  font-size: 25px;
+  text-decoration: underline;
+  color: chartreuse; }
+
+.titulopie {
+  font-family: 'Times New Roman', Times, serif; }

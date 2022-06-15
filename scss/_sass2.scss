@@ -1,0 +1,19 @@
+$redesuno:(insta:blueviolet, youtu:red, wpp:lightgreen);
+
+@each $redes in $redesuno {
+    .fuente#{$redes} {
+        text-decoration: $deco;
+    }
+
+}
+
+;
+
+
+
+$colorestexto:(primary:blue, secondary:red);
+
+@mixin textos {
+    text-align: center;
+    font-weight: 500;
+}
