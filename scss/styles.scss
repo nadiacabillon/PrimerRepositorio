@@ -42,8 +42,8 @@
 }
 
 @font-face {
-    font-family: 'Quick';
-    src: url(../fonts/quicksand/Quicksand-Regular.otf);
+    font-family: 'Tomatoe';
+    src: url(../fonts/Tomatoes-O8L8.ttf);
 
 }
 
@@ -56,11 +56,11 @@
 
 .todo {
     background-image: url(../img/19742.jpg) !important;
-    align-items: center;
+    align-items: $alineacion;
 
     .texto1 {
         font-family: $fuente-parrafos;
-        font-size: 18px;
+        font-size: $sizefuente;
         text-align: justify;
         height: fit-content;
         width: fit-content;
@@ -72,17 +72,17 @@
         @include textos;
 
         .subtitulos {
-            font-family: 'quick';
-            color: antiquewhite;
+            font-family: 'Tomatoe';
+            color: $color-detalles2;
             font-size: 2em;
-            text-align: center;
-            background-color: #2f3542;
+            text-align: $alineacion;
+            background-color: none;
         }
     }
 
     .texto2 {
         font-family: $fuente-parrafos;
-        font-size: 18px;
+        font-size: $sizefuente;
         text-align: justify;
         height: fit-content;
         width: fit-content;
@@ -94,11 +94,11 @@
         @include textos;
 
         .subtitulos {
-            font-family: 'quick';
-            color: antiquewhite;
+            font-family: 'Tomatoe';
+            color: $color-detalles2;
             font-size: 2em;
-            text-align: center;
-            background-color: #2f3542;
+            text-align:$alineacion;
+            background-color: none;
         }
 
     }
@@ -121,7 +121,7 @@
 
     .proceso1 {
         font-family: $fuente-parrafos;
-        font-size: 18px;
+        font-size: $sizefuente;
         text-align: justify;
         height: fit-content;
         width: fit-content;
@@ -130,15 +130,15 @@
         padding: 0em;
         line-height: 2em;
         display: flexbox;
-        text-align: center;
+        text-align: $alineacion;
         font-weight: 500;
 
         .subtitulos {
-            font-family: 'quick';
-            color: antiquewhite;
+            font-family: 'Tomatoe';
+            color: $color-detalles2;
             font-size: 2em;
-            text-align: center;
-            background-color: #2f3542;
+            text-align: $alineacion;
+            background-color: none;
         }
 
 
@@ -146,7 +146,7 @@
 
     .proceso2 {
         font-family: $fuente-parrafos;
-        font-size: 18px;
+        font-size: $sizefuente;
         text-align: justify;
         height: fit-content;
         width: fit-content;
@@ -155,20 +155,14 @@
         padding: 0em;
         line-height: 2em;
         display: flexbox;
-        text-align: center;
+        text-align: $alineacion;
         font-weight: 500;
 
-        .subtitulos {
-            font-family: 'quick';
-            color: antiquewhite;
-            font-size: 2em;
-            text-align: center;
-            background-color: #2f3542;
         }
 
         .proceso3 {
             font-family: $fuente-parrafos;
-            font-size: 18px;
+            font-size: $sizefuente;
             text-align: justify;
             height: fit-content;
             width: fit-content;
@@ -177,16 +171,10 @@
             padding: 0em;
             line-height: 2em;
             display: flexbox;
-            text-align: center;
+            text-align: $alineacion;
             font-weight: 500;
 
-            .subtitulos {
-                font-family: 'quick';
-                color: antiquewhite;
-                font-size: 2em;
-                text-align: center;
-                background-color: #2f3542;
-            }
+     
 
 
         }
@@ -199,11 +187,11 @@
         .cajaazul {
             margin: 0% !important;
             padding: 0%;
-            align-self: center !important;
+            align-self: $alineacion !important;
 
             .cajaprensa {
                 margin: 1em;
-                align-items: center;
+                align-items: $alineacion;
 
                 .cajaprensa2 {
 
@@ -211,12 +199,12 @@
                         height: 34em;
                         width: auto;
                         background-color: $color-detalles;
-                        color: antiquewhite;
+                        color: $fuenteblanco;
                         font-size: 1em;
                         font-family: 'RobotoLight';
                         border-radius: 1em;
                         margin: 1em;
-                        align-self: center;
+                        align-self: $alineacion;
 
                         .listado {
                             padding: 1em;
@@ -249,20 +237,20 @@
         height: 38em;
         width: auto;
         background-color: $color-detalles;
-        color: antiquewhite;
+        color: $fuenteblanco;
         font-size: 1em;
         font-family: 'RobotoLight';
         padding-inline: 2em;
         border-radius: 1em;
         margin: 1em;
-        align-self: center;
+        align-self: $alineacion;
         text-align: left;
 
         .tituloform {
-            font-family: 'Roboto';
-            color: antiquewhite;
-            align-self: center;
-            text-align: center;
+            font-family: $fuente-parrafos;
+            color: $fuenteblanco;
+            align-self: $alineacion;
+            text-align: $alineacion;
             height: fit-content;
             width: fit-content;
         }
@@ -282,37 +270,4 @@
     }
 
 
-}
 
-.fuente {
-    font-family: $redes;
-}
-
-.insta {
-    color: blueviolet;
-}
-
-.youtu {
-    color: red;
-}
-
-.wpp {
-    color: lightgreen;
-}
-
-.prueba {
-    color: map-get($colorestexto, secondary);
-}
-
-
-.textoresaltado {
-    font-weight: 700;
-    font-size: 25px;
-    text-decoration: underline;
-    color: chartreuse;
-}
-
-.titulopie {
-    font-family: 'Times New Roman', Times, serif;
-    @extend .textoresaltado
-}

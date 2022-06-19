@@ -1,12 +1,3 @@
-.fuenteinsta blueviolet {
-  text-decoration: "underline;"; }
-
-.fuenteyoutu red {
-  text-decoration: "underline;"; }
-
-.fuentewpp lightgreen {
-  text-decoration: "underline;"; }
-
 * {
   margin: 0;
   padding: 0;
@@ -35,8 +26,8 @@
   src: url(../fonts/Roboto/Roboto-Light.ttf); }
 
 @font-face {
-  font-family: 'Quick';
-  src: url(../fonts/quicksand/Quicksand-Regular.otf); }
+  font-family: 'Tomatoe';
+  src: url(../fonts/Tomatoes-O8L8.ttf); }
 
 @font-face {
   font-family: 'RobotoThinItalic';
@@ -59,11 +50,11 @@
     text-align: center;
     font-weight: 500; }
     .todo .texto1 .subtitulos {
-      font-family: 'quick';
-      color: antiquewhite;
+      font-family: 'Tomatoe';
+      color: #2f3542;
       font-size: 2em;
       text-align: center;
-      background-color: #2f3542; }
+      background-color: none; }
   .todo .texto2 {
     font-family: "Roboto";
     font-size: 18px;
@@ -78,11 +69,11 @@
     text-align: center;
     font-weight: 500; }
     .todo .texto2 .subtitulos {
-      font-family: 'quick';
-      color: antiquewhite;
+      font-family: 'Tomatoe';
+      color: #2f3542;
       font-size: 2em;
       text-align: center;
-      background-color: #2f3542; }
+      background-color: none; }
   .todo h4 {
     font-family: 'RobotoBold';
     font-size: 1em; }
@@ -106,11 +97,11 @@
     text-align: center;
     font-weight: 500; }
     .todo .proceso1 .subtitulos {
-      font-family: 'quick';
-      color: antiquewhite;
+      font-family: 'Tomatoe';
+      color: #2f3542;
       font-size: 2em;
       text-align: center;
-      background-color: #2f3542; }
+      background-color: none; }
   .todo .proceso2 {
     font-family: "Roboto";
     font-size: 18px;
@@ -124,100 +115,66 @@
     display: flexbox;
     text-align: center;
     font-weight: 500; }
-    .todo .proceso2 .subtitulos {
-      font-family: 'quick';
-      color: antiquewhite;
-      font-size: 2em;
-      text-align: center;
-      background-color: #2f3542; }
-    .todo .proceso2 .proceso3 {
-      font-family: "Roboto";
-      font-size: 18px;
-      text-align: justify;
-      height: fit-content;
-      width: fit-content;
-      line-height: 1em;
-      margin: 1em;
-      padding: 0em;
-      line-height: 2em;
-      display: flexbox;
-      text-align: center;
-      font-weight: 500; }
-      .todo .proceso2 .proceso3 .subtitulos {
-        font-family: 'quick';
-        color: antiquewhite;
-        font-size: 2em;
-        text-align: center;
-        background-color: #2f3542; }
-  .todo .padrecaja .cajaazul {
-    margin: 0% !important;
-    padding: 0%;
-    align-self: center !important; }
-    .todo .padrecaja .cajaazul .cajaprensa {
-      margin: 1em;
-      align-items: center; }
-      .todo .padrecaja .cajaazul .cajaprensa .cajaprensa2 .entrevistas {
-        height: 34em;
-        width: auto;
-        background-color: #3c3c6e;
-        color: antiquewhite;
-        font-size: 1em;
-        font-family: 'RobotoLight';
-        border-radius: 1em;
-        margin: 1em;
-        align-self: center; }
-        .todo .padrecaja .cajaazul .cajaprensa .cajaprensa2 .entrevistas .listado {
-          padding: 1em; }
-          .todo .padrecaja .cajaazul .cajaprensa .cajaprensa2 .entrevistas .listado .listado1 {
-            padding: 1em; }
-            .todo .padrecaja .cajaazul .cajaprensa .cajaprensa2 .entrevistas .listado .listado1 .listado2 {
-              padding: 1em; }
-  .todo .formulario {
-    height: 38em;
-    width: auto;
-    background-color: #3c3c6e;
-    color: antiquewhite;
-    font-size: 1em;
-    font-family: 'RobotoLight';
-    padding-inline: 2em;
-    border-radius: 1em;
+  .todo .proceso3 {
+    font-family: "Roboto";
+    font-size: 18px;
+    text-align: justify;
+    height: fit-content;
+    width: fit-content;
+    line-height: 1em;
     margin: 1em;
-    align-self: center;
-    text-align: left; }
-    .todo .formulario .tituloform {
-      font-family: 'Roboto';
+    padding: 0em;
+    line-height: 2em;
+    display: flexbox;
+    text-align: center;
+    font-weight: 500; }
+
+.padrecaja .cajaazul {
+  margin: 0% !important;
+  padding: 0%;
+  align-self: center !important; }
+  .padrecaja .cajaazul .cajaprensa {
+    margin: 1em;
+    align-items: center; }
+    .padrecaja .cajaazul .cajaprensa .cajaprensa2 .entrevistas {
+      height: 34em;
+      width: auto;
+      background-color: #3c3c6e;
       color: antiquewhite;
-      align-self: center;
-      text-align: center;
-      height: fit-content;
-      width: fit-content; }
-    .todo .formulario .listaform {
-      padding: 3em;
-      list-style: none;
-      padding-inline: 2em; }
-      .todo .formulario .listaform .ingreseform {
+      font-size: 1em;
+      font-family: 'RobotoLight';
+      border-radius: 1em;
+      margin: 1em;
+      align-self: center; }
+      .padrecaja .cajaazul .cajaprensa .cajaprensa2 .entrevistas .listado {
         padding: 1em; }
+        .padrecaja .cajaazul .cajaprensa .cajaprensa2 .entrevistas .listado .listado1 {
+          padding: 1em; }
+          .padrecaja .cajaazul .cajaprensa .cajaprensa2 .entrevistas .listado .listado1 .listado2 {
+            padding: 1em; }
 
-.fuente {
-  font-family: "Roboto"; }
-
-.insta {
-  color: blueviolet; }
-
-.youtu {
-  color: red; }
-
-.wpp {
-  color: lightgreen; }
-
-.prueba {
-  color: red; }
-
-.textoresaltado, .titulopie {
-  font-weight: 700;
-  font-size: 25px;
-  text-decoration: underline;
-  color: chartreuse; }
-
-.titulopie {
-  font-family: 'Times New Roman', Times, serif; }
+.formulario {
+  height: 38em;
+  width: auto;
+  background-color: #3c3c6e;
+  color: antiquewhite;
+  font-size: 1em;
+  font-family: 'RobotoLight';
+  padding-inline: 2em;
+  border-radius: 1em;
+  margin: 1em;
+  align-self: center;
+  text-align: left; }
+  .formulario .tituloform {
+    font-family: "Roboto";
+    color: antiquewhite;
+    align-self: center;
+    text-align: center;
+    height: fit-content;
+    width: fit-content; }
+  .formulario .listaform {
+    padding: 3em;
+    list-style: none;
+    padding-inline: 2em; }
+    .formulario .listaform .ingreseform {
+      padding: 1em; }
